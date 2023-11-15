@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Analog Clock by • Abhishek</title>
+    <link rel="stylesheet" href="index.css" />
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="clock">
+            <label style="--i: 1"><span>•</span></label>
+            <label style="--i: 2"><span>•</span></label>
+            <label style="--i: 3"><span>3</span></label>
+            <label style="--i: 4"><span>•</span></label>
+            <label style="--i: 5"><span>•</span></label>
+            <label style="--i: 6"><span>6</span></label>
+            <label style="--i: 7"><span>•</span></label>
+            <label style="--i: 8"><span>•</span></label>
+            <label style="--i: 9"><span>9</span></label>
+            <label style="--i: 10"><span>•</span></label>
+            <label style="--i: 11"><span>•</span></label>
+            <label style="--i: 12"><span>12</span></label>
+
+            <div class="indicator">
+                <span><i class="ri-angularjs-line"></i></span>
+                <span id="date-space"><p id="datetime"></p></span>
+                <span class="hand hour"></span>
+                <span class="hand minute"></span>
+                <span class="hand second"></span>
+                
+            </div>
+
+        </div>
+        <div id="set-alarm">
+            <label for="selected-time">Set Alarm Time :</label>
+            <input type="time" id="selected-time">
+            <label for="toggleCheckbox">Activate Alarm</label>
+            <input type="checkbox" id="toggleCheckbox">
+            
+            <audio id="myAudio">
+                <source src="wakeup-tone.mp3" type="audio/mpeg">
+            </audio>
+            
+        </div>
+    </div>
+
+    <script src="index.js" defer></script>
+</body>
+</html>
